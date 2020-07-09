@@ -11,12 +11,12 @@ class TestHello(unittest.TestCase):
     def test_hello(self):
         rv = self.app.get('/')
         self.assertEqual(rv.status, '200 OK')
-        self.assertEqual(rv.data, b'Hello World This is bharani!\n')
+        self.assertEqual(rv.data, b'Hello World This is bharani kumar yedla!\n')
 
     def test_hello_hello(self):
         rv = self.app.get('/hello/')
         self.assertEqual(rv.status, '200 OK')
-        self.assertEqual(rv.data, b'Hello World This is bharani!\n')
+        self.assertEqual(rv.data, b'Hello World This is bharani kumar yedla!\n')
 
 if __name__ == '__main__':
     unittest.main()
